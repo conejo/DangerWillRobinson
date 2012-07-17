@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<configuration>
+	<appSettings>
+		<add key="notificationList" value="your-email@boohoo.com"/>
+		<add key="from" value="somebody@boohoo.com"/>
+	</appSettings>
+
+	<system.net>
+		<mailSettings>
+			<smtp deliveryMethod="Network">
+				<network host="your email host" userName="username" password="password" defaultCredentials="true" port="25"/>
+			</smtp>
+		</mailSettings>
+	</system.net>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+	</startup>
+</configuration>
+
